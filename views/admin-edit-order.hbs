@@ -1,0 +1,40 @@
+<form action="/admin/{{results._id}}/edit" method="POST">
+<div class="papaEditOrderDiv">
+    <div class="editOrderDiv">
+        <div>
+            <label for="orderNumber">Order Number</label>
+            <input type="text" name="orderNumber" id="orderNumber" readonly value="{{results.orderNumber}}">
+        </div>
+        <div>
+    
+            <label for="customerName">Customer Name</label>
+            <input type="text" name="customerName" id="customerName" value="{{results.customerName}}">
+        </div>
+        <div>
+    
+            <label for="jobAddress">Job Address</label>
+            <input type="text" name="jobAddress" id="jobAddress" value="{{results.jobAddress}}">
+        </div>
+        <div>
+            <label for="trackingStatus">Order Status:</label>
+            <select name="trackingStatus" id="trackingStatus">
+                <option value="Processing Order" {{#if trackArray.[0]}} selected {{/if}}>Processing Order</option>
+                <option value="Products Ordered" {{#if trackArray.[1]}} selected {{/if}}>Products Ordered</option>
+                <option value="Products Received" {{#if trackArray.[2]}} selected {{/if}}>Products Received</option>
+                <option value="Ready to Install" {{#if trackArray.[3]}} selected {{/if}}>Ready to Install</option>
+            </select>
+        </div>
+        <div>
+            <label for="permitStatus">Permit Status:</label>
+            <select name="permitStatus" id="permitStatus">
+                <option value="Pending" {{#if permitArray.[0]}} selected {{/if}}>Pending</option>
+                <option value="Submitted" {{#if permitArray.[1]}} selected {{/if}}>Submitted</option>
+                <option value="In-progress" {{#if permitArray.[2]}} selected {{/if}}>In-progress</option>
+                <option value="Revisions" {{#if permitArray.[3]}} selected {{/if}}>Revisions</option>
+                <option value="Completed" {{#if permitArray.[4]}} selected {{/if}}>Completed</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+</form>

@@ -1,0 +1,18 @@
+<h2 class="trackedTag">Currently tracked orders:</h2>
+<div class="container">
+    <div class="row">
+        {{#each results}}
+
+        <div class="orderViewDiv col-4">
+            <p>Order Number: {{this.orderNumber}}</p>
+            <p>Customer Name: {{this.customerName}}</p>
+            <p>Job Address: {{this.jobAddress}}</p>
+            <p>Tracking Status: {{this.trackingStatus}}</p>
+            <p>Permit Status: {{this.permitStatus}}</p>
+            <a href="/admin/{{this._id}}/edit">Update Order</a>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+

@@ -79,6 +79,40 @@ a {
   text-align: center;
 }
 
+.editOrderDiv {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.editOrderDiv div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.editOrderDiv select {
+  width: 220px
+}
+
+.papaEditOrderDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.orderViewDiv {
+  border: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color:  rgb(167, 167, 167);
+  margin: 20px;
+  width: 600px
+}
+
+.trackedTag {
+  text-align: center;
+}
+
 /* mobile L and smaller specific styling */
 @media screen and (max-width : 425px)
 {
