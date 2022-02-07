@@ -148,5 +148,9 @@ a {
     font-weight: bold;
   }
 
+  .orderViewDiv {
+    width: 90vw;
+  }
+
 }
 
