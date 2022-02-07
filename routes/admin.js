@@ -77,4 +77,9 @@ router.get("/:id/edit", (req, res) => {
   }
 });
 
+router.post("/:id/edit", (req, res) => {
+  console.log("i want to update to this: ", req.body);
+  //use the info above to change the corresponding order in the db
+});
+
 module.exports = router;
